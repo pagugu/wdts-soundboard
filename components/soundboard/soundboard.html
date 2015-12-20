@@ -1,0 +1,19 @@
+<div class="videoContainer">
+	<div class="clipQueue" ng-controller="SoundboardController">
+		Clips Queued ({{clipQueue.length}}):
+	    <ul>
+	        <li ng-repeat="clip in clipQueue">{{clip.name}}</li>
+	    </ul>		
+	</div>
+	<div class="clipPlayer" id="player">
+	</div>
+</div>
+<div id="buttons" ng-controller="SoundboardController">
+	<table class="table">
+		<tbody>
+			<tr ng-repeat="row in config.buttons.rows">
+	        	<td>{{row.header}}</td><td ng-repeat = "button in row.buttons"><button ng-click="queueClip(button.name, button.startTime, button.endTime)">{{button.name}}</button></td>
+	        </tr>
+		</tbody>
+	</table>
+</div>
