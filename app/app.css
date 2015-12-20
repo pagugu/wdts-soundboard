@@ -28,3 +28,35 @@
   content: "";
   padding: 0;
 }
+
+.videoContainer{
+  display: flex;
+  width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.clipQueue{
+    width: 200px;
+}
+.clipPlayer{
+    /*flex-grow: 1;*/
+}
+
+
+table {
+  width:100%;
+}
+table, th, td {
+  border: 1px solid black;  
+}
+tr {
+  text-align: center;
+  height:60px;
+}
+td {
+  vertical-align: center;
+}
+
+button {
+  height: 50px;
+}
